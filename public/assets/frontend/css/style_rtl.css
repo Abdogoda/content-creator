@@ -1,0 +1,162 @@
+html,
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+/*---------------------
+   Helper CSS
+ -----------------------*/
+.section-title.center-title h2:after {
+    left: 0;
+    margin: 0 auto;
+}
+.section-title h2:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 70px;
+    background: var(--primary-color);
+    content: "";
+}
+
+/*---------------------
+   Header
+ -----------------------*/
+.header__nav__option {
+    text-align: left;
+}
+.header__nav__menu ul li:last-child {
+    margin-right: 0;
+}
+.header__nav__menu ul li .dropdown li {
+    margin-right: 0;
+}
+.header__nav__menu ul li a:after {
+    left: 0;
+}
+.header__nav__social {
+    padding-right: 50px;
+}
+.header__nav__social:before {
+    right: 30px;
+}
+.header__nav__social a {
+    margin-left: 18px;
+}
+.header__nav__social a:last-child {
+    margin-right: 0;
+}
+
+/*---------------------
+   Footer
+ -----------------------*/
+.footer__top__social a {
+    margin-left: 6px;
+}
+.footer__top__social a:last-child {
+    margin-left: 0;
+}
+.footer__option__item .read__more span {
+    margin-left: 5px;
+}
+
+/*---------------------
+  Hero
+-----------------------*/
+.hero__slider.owl-carousel .owl-dots button {
+    margin-left: 16px;
+    margin-right: 0;
+}
+.hero__slider.owl-carousel .owl-dots button:last-child {
+    margin-left: 0;
+}
+
+/*---------------------
+  Testimonial
+-----------------------*/
+.testimonial__author__pic {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/*---------------------
+   Team
+ -----------------------*/
+.team__btn {
+    left: 0;
+    right: auto;
+}
+
+/*---------------------
+  Contact Widget
+-----------------------*/
+.contact__widget__item__icon {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+/*---------------------
+  Contact
+-----------------------*/
+.contact {
+    background: var(--background);
+    padding-top: 0;
+    overflow: hidden;
+}
+.contact__form form input,
+.contact__form form textarea {
+    padding-right: 20px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slicknav_btn {
+        left: 10px;
+        right: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header__nav__social {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header__nav__social:before {
+        right: 0;
+    }
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+    .slicknav_btn {
+        left: 10px;
+        right: auto;
+    }
+}
+
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb__links a {
+    margin-left: 32px;
+    margin-right: auto;
+}
+.breadcrumb__links a:after {
+    left: -22px;
+    right: auto;
+}
+
+/* letter spacing */
+.section-title span,
+.primary-btn,
+.hero__text span,
+.site-btn {
+    letter-spacing: 0px;
+}

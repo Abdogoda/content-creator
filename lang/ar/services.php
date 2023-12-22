@@ -1,0 +1,37 @@
+<?php
+
+return [
+ 'services' => 'خدماتنا',
+ 'our_services' => 'خدماتنا',
+ 'create_new_service' => 'انشاء خدمة جديدة',
+ 'what_we_do' => 'ما الذي نقدمه؟',
+ 'description' => 'إذا قمت بتعيين مصور فيديو من فريقنا، فستحصل على محترف فيديو
+ لإنشاء فيديو مخصص لعملك، وبمجرد انتهاء المشروع.',
+ 'view_all_services' => 'عرض كل خدماتنا',
+ 'no_services_found' => 'لا يوجد خدمات متاحة',
+ 'service_features' => 'تفاصيل الخدمة: ',
+ 
+ 'back_to_services' => 'الذهاب الي الخدمات',
+ 'service_description' => 'وصف الخدمة',
+ 'service_name' => 'اسم الخدمة',
+ 'service_icon' => 'ايقونة الخدمة',
+ 'service_image' => 'صورة الخدمة',
+ 'add_service_feature' => 'اضافة تفاصيل للخدمة',
+ 'edit_service_feature' => 'تعديل تفاصيل للخدمة',
+ 'no_features_for_this_service' => 'لا يوجد تفاصيل لهذة الخدمة',
+ 'add_service_work' => 'اضافة اعمال للخدمة',
+ 'edit_service_work' => 'تعديل اعمال للخدمة',
+ 'add_video' => 'اضافة فيديو',
+ 'add_image' => 'اضافة صورة',
+ 'work_attachment' => 'مرفقات العمل',
+ 'work_thumbnail' => 'الصورة المصغرة للعمل',
+ 'work_name' => 'اسم العمل',
+ 'no_works_for_this_service' => 'لا يوجد اعمال لهذة الخدمة',
+ 'image_style' => 'شكل الصورة',
+ 'small' => 'صغيرة',
+ 'wide' => 'واسعة', 
+ 'large' => 'كبيرة',
+ 'video' => 'الفيديو',
+ 'video_thumbnail' => 'الصورة المصغرة للفيديو',
+ 'feature_name' => "التفاصيل",
+];

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+:root {
+    --dark: #34495e;
+    --light: #f1f1f1;
+    --success: #0abf30;
+    --danger: #e24d4c;
+    --warning: #e9bd0c;
+    --info: #3498d8;
+}
+.notifications {
+    position: fixed;
+    z-index: 100;
+    top: 60px;
+    left: 20px;
+    width: 22rem;
+    padding: 15px;
+    max-width: calc(100% - 3rem) !important;
+}
+.notifications :where(.alert-toast, .column) {
+    display: flex;
+    align-items: center;
+}
+.notifications .alert-toast {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background-color: var(--light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    animation: show_toast 0.3s ease forwards;
+}
+@keyframes show_toast {
+    0% {
+        transform: translateX(-120%);
+    }
+    40% {
+        transform: translateX(5%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+.notifications .alert-toast.hide {
+    animation: hide_toast 0.3s ease forwards;
+}
+@keyframes hide_toast {
+    0% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+.notifications .alert-toast::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    animation: progress 5s linear forwards;
+}
+@keyframes progress {
+    100% {
+        width: 0%;
+    }
+}
+.notifications .alert-toast.success::before {
+    background-color: var(--success);
+}
+.notifications .alert-toast.danger::before {
+    background-color: var(--danger);
+}
+.notifications .alert-toast.warning::before {
+    background-color: var(--warning);
+}
+.notifications .alert-toast.info::before {
+    background-color: var(--info);
+}
+.notifications .alert-toast.success svg,
+.notifications .alert-toast.success i {
+    color: var(--success);
+}
+.notifications .alert-toast.danger svg,
+.notifications .alert-toast.danger i {
+    color: var(--danger);
+}
+.notifications .alert-toast.warning svg,
+.notifications .alert-toast.warning i {
+    color: var(--warning);
+}
+.notifications .alert-toast.info svg,
+.notifications .alert-toast.info i {
+    color: var(--info);
+}
+.notifications .alert-toast .column svg,
+.notifications .alert-toast .column i {
+    font-size: 1.7rem;
+}
+.notifications .alert-toast .column .text {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-right: 12px;
+}
+.notifications .alert-toast .column .text span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+}
+.notifications .alert-toast .column .text p {
+    font-size: 0.9rem;
+    color: #777777;
+}
+.notifications .alert-toast .fa-xmark {
+    color: #aeb0d7;
+    cursor: pointer;
+}
+.notifications .alert-toast .fa-xmark:hover {
+    color: var(--dark);
+}
+@media (max-width: 500px) {
+    .notifications {
+        font-size: 80%;
+        left: 0.5rem;
+        max-width: calc(100% - 2rem) !important;
+    }
+}
